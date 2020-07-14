@@ -123,6 +123,60 @@ genie/fast:
 	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/build
 .PHONY : genie/fast
 
+Nationality.o: Nationality.cpp.o
+
+.PHONY : Nationality.o
+
+# target to build an object file
+Nationality.cpp.o:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Nationality.cpp.o
+.PHONY : Nationality.cpp.o
+
+Nationality.i: Nationality.cpp.i
+
+.PHONY : Nationality.i
+
+# target to preprocess a source file
+Nationality.cpp.i:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Nationality.cpp.i
+.PHONY : Nationality.cpp.i
+
+Nationality.s: Nationality.cpp.s
+
+.PHONY : Nationality.s
+
+# target to generate assembly for a file
+Nationality.cpp.s:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Nationality.cpp.s
+.PHONY : Nationality.cpp.s
+
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... genie"
+	@echo "... Nationality.o"
+	@echo "... Nationality.i"
+	@echo "... Nationality.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/murre/CLionProjects/genie/Nationality.cpp">
+			<Option target="genie"/>
+		</Unit>
+		<Unit filename="/home/murre/CLionProjects/genie/Nationality.h">
+			<Option target="genie"/>
+		</Unit>
+		<Unit filename="/home/murre/CLionProjects/genie/Player.cpp">
+			<Option target="genie"/>
+		</Unit>
+		<Unit filename="/home/murre/CLionProjects/genie/Player.h">
+			<Option target="genie"/>
+		</Unit>
 		<Unit filename="/home/murre/CLionProjects/genie/main.cpp">
 			<Option target="genie"/>
 		</Unit>

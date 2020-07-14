@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/genie.dir/Nationality.cpp.o"
+  "CMakeFiles/genie.dir/Player.cpp.o"
   "CMakeFiles/genie.dir/main.cpp.o"
   "genie"
   "genie.pdb"
