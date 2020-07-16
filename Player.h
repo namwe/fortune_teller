@@ -13,14 +13,12 @@ private:
     int weight;
     int height;
     std::string name;
-    std::string nationality;
 
 public:
-    Player(int weight, int height, std::string name, std::string nationality) {
+    Player(int weight, int height, std::string name) {
         this->weight = weight;
          this->height = height;
         this->name = name;
-        this->nationality = nationality;
     }
     int getWeight();
     int getHeight();

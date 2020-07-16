@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/murre/CLionProjects/genie/Fortune.cpp" "/home/murre/CLionProjects/genie/cmake-build-debug/CMakeFiles/genie.dir/Fortune.cpp.o"
   "/home/murre/CLionProjects/genie/Nationality.cpp" "/home/murre/CLionProjects/genie/cmake-build-debug/CMakeFiles/genie.dir/Nationality.cpp.o"
   "/home/murre/CLionProjects/genie/Player.cpp" "/home/murre/CLionProjects/genie/cmake-build-debug/CMakeFiles/genie.dir/Player.cpp.o"
   "/home/murre/CLionProjects/genie/main.cpp" "/home/murre/CLionProjects/genie/cmake-build-debug/CMakeFiles/genie.dir/main.cpp.o"

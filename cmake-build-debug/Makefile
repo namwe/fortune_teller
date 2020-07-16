@@ -123,6 +123,33 @@ genie/fast:
 	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/build
 .PHONY : genie/fast
 
+Fortune.o: Fortune.cpp.o
+
+.PHONY : Fortune.o
+
+# target to build an object file
+Fortune.cpp.o:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Fortune.cpp.o
+.PHONY : Fortune.cpp.o
+
+Fortune.i: Fortune.cpp.i
+
+.PHONY : Fortune.i
+
+# target to preprocess a source file
+Fortune.cpp.i:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Fortune.cpp.i
+.PHONY : Fortune.cpp.i
+
+Fortune.s: Fortune.cpp.s
+
+.PHONY : Fortune.s
+
+# target to generate assembly for a file
+Fortune.cpp.s:
+	$(MAKE) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/Fortune.cpp.s
+.PHONY : Fortune.cpp.s
+
 Nationality.o: Nationality.cpp.o
 
 .PHONY : Nationality.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... genie"
+	@echo "... Fortune.o"
+	@echo "... Fortune.i"
+	@echo "... Fortune.s"
 	@echo "... Nationality.o"
 	@echo "... Nationality.i"
 	@echo "... Nationality.s"

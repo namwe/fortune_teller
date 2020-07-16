@@ -15,6 +15,8 @@ public:
     void printNationalities();
     bool check_for_matching_nationality(const std::string& userInput);
     void witch_nationality_answering(const std::string& nationality);
+
+    std::string nationalitySelect(const std::string &nationality);
 };
 
 
