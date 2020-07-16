@@ -11,6 +11,7 @@ void part_one();
 void part_two();
 void part_three();
 void part_four();
+bool isNumber(const std::string& string);
 std::string input_to_lowercase(const std::string& answer);
 std::string correctingInput();
 std::vector<std::string> results;
@@ -18,7 +19,6 @@ std::vector<std::string> results;
 int main() {
     start();
     return 0;
-
 
 }
 
@@ -131,32 +131,34 @@ void part_three() {
     std::string name;
     std::string age;
     bool progressing = false;
-        while (!progressing) {
-            try {
+    while (!progressing) {
+        try {
+            std::cout << "What is your name?" << std::endl;
+            std::cin >> name;
+            while (isNumber(name)) {
+                std::cout << "Illegal type of name...... Try again!" << std::endl;
                 std::cout << "What is your name?" << std::endl;
                 std::cin >> name;
-                if (std::cin.fail()) {
-                    std::cout << "ERRRRORORO" << std::endl;
-                    progressing = false;
-                }
-                std::cout << "Your age?" << std::endl;
-                age = correctingInput();
-                int ageInt = std::stoi(age);
+            }
+            std::cout << "Your age?" << std::endl;
+            age = correctingInput();
+            int ageInt = std::stoi(age);
 
-                if (ageInt > 0 && ageInt <= 18) {
-                    std::cout << "Still so young...." << std::endl;
-                } else if (ageInt > 18 && ageInt <= 30) {
-                    std::cout << "You are getting older.... Spend your time well." << std::endl;
-                } else if (ageInt > 30) {
-                    std::cout << "I see, old man. Please, enjoy your time here.... he he he" << std::endl;
-                }
-                progressing = true;
+            if (ageInt > 0 && ageInt <= 18) {
+                std::cout << "Still so young...." << std::endl;
+            } else if (ageInt > 18 && ageInt <= 30) {
+                std::cout << "You are getting older.... Spend your time well." << std::endl;
+            } else if (ageInt > 30) {
+                std::cout << "I see, old man. Please, enjoy your time here.... he he he" << std::endl;
             }
-            catch (const std::invalid_argument &argument) {
-                progressing = false;
-                std::cout << "Wrong input, try again." << std::endl << std::endl;
-            }
+            progressing = true;
         }
+        catch (const std::invalid_argument &argument) {
+            progressing = false;
+            std::cout << "Illegal input, try again." << std::endl << std::endl;
+        }
+    }
+
     results.push_back(name);
     results.push_back(age);
     
@@ -167,6 +169,9 @@ void part_four () {
     Fortune fortune;
     std::string theFortune = fortune.print_results();
     results.push_back(theFortune);
+
+    std::cout << std::endl;
+    std::cout << results[3] << std::endl;
 
     std::cout << "Would you like to save your results? [Yes/No]";
     std::string answer = correctingInput();
@@ -192,4 +197,15 @@ std::string correctingInput() {
     std::cin >> answer;
     answer = input_to_lowercase(answer);
     return answer;
+}
+
+bool isNumber(const std::string& s) {
+    // This function will check if the string given is an integer or not. //
+
+    for (int i = 0; i < s.length(); i++) {
+        if (isdigit(s[i]) == 0) {
+            return false;
+        }
+    }
+    return true;
 }
